@@ -3,7 +3,7 @@ body {
     /*margin: 0;
     height: 100%;*/
     background-color:black;
-    cursor: none;
+    cursor: pointer;
 
 }
 /*hide scroll bar*/
@@ -37,6 +37,10 @@ img{
     right: 0;
     left: 0;
     top: 0;
+
+}
+span:hover {
+    color: grey;
 
 }
 .strip{

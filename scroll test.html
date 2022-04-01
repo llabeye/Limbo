@@ -25,7 +25,7 @@
       <div id="wrapper">
       <div class="gradient"></div>
       <<div style="display:none" id="stuff"><div class="awaytextthings">Take a step back. <br> Breathe in.<br>You're very much alive.</div></div>
-      <div class="show"><span>Limbo</span></div>
+      <div class="show"> Limbo </div>
     <div id="div0">
        <img src="strips/i1.jpg">
     </div>
@@ -54,7 +54,6 @@
 
         
         $(window).on('click', function() {
-            $("body").css("cursor","none");
             $(".show").fadeOut(5000);
             var nextnextstrip = "<div id='div" + idnumber + "''><img src = 'strips/i" + (counter) +".jpg'></div>";
             if ($(window).scrollTop() >= $(element).offset().top + $(element).outerHeight() - window.innerHeight) {
