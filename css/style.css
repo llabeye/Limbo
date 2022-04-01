@@ -1,0 +1,63 @@
+html,
+body {
+    /*margin: 0;
+    height: 100%;*/
+    background-color:black;
+    cursor: none;
+
+}
+/*hide scroll bar*/
+body::-webkit-scrollbar { width: 0 !important; height: 0 !important; }
+@font-face{
+    font-family: Redaction;
+    src:url(Redaction10Bold-w1gB6.otf);
+    
+}
+img{
+    width: 30vw;
+    cursor: none;
+}
+.gradient{
+    position: sticky;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    top: 0;
+    z-index: 3;
+    height: 10vh;
+}
+.show{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: "Redaction";
+    font-size: 30vw;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+
+}
+.strip{
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+#stuff{
+    Width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    left: 0%;
+}
+.awaytextthings{
+    color: white;
+    text-align: center;
+    font-family: "Redaction";
+    font-size: 10vh;
+    margin: auto;
+    padding: 25vh;
+}

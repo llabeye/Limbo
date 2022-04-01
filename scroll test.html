@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+  
+<head>
+    <title>
+      scroll test
+    </title>
+    <link href="css/style.css" rel="stylesheet"  />
+</head>
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+</script>
+<script src="js/jquery.autoscroll.js"></script>
+<script src="js/jquery.pause.min.js"></script>
+
+
+  
+<body style="text-align:center;" 
+      id="body">
+      <div id="wrapper">
+      <div class="gradient"></div>
+      <<div style="display:none" id="stuff"><div class="awaytextthings">Take a step back. <br> Breathe in.<br>You're very much alive.</div></div>
+      <!--<div class="show"> Rotate </div>-->
+    <div id="div0">
+       <img src="strips/i1.jpg">
+    </div>
+</div>
+    <script>
+        var counter = 1;
+        var idnumber = 0
+        var nextstrip = "<img src='strips/1-2.jpg'>"
+        var element = document.getElementById('div'+idnumber);
+        var timeout;
+        var stuff = document.getElementById("stuff");
+        var limbo = document.getElementById("div0");
+       
+
+      /* document.addEventListener("mousemove", function(e) {
+         $(element).css("display","none");
+         $(limbo).fadeIn();
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+         $(stuff).fadeIn(2000);
+         $(limbo).fadeOut();
+        }, 3000);
+
+        });*/
+
+
+        $(".show").hide();
+        $(window).on('scroll', function() {
+            var nextnextstrip = "<div id='div" + idnumber + "''><img src = 'strips/i" + (counter) +".jpg'></div>";
+            if ($(window).scrollTop() >= $(element).offset().top + $(element).outerHeight() - window.innerHeight) {
+                /*$(".show").show(2000);*/
+                $()
+                counter++;
+                idnumber++;
+                
+                /*alert('You reached the end of the DIV');*/
+            }
+             
+       
+            if (counter <= 1){
+                counter++;
+            }
+            else if (counter < 23) {
+                $(element).append(nextnextstrip);
+                counter++;
+                idnumber++;
+                $("html, body").animate({ scrollTop: $(element).height() }, 50000);
+
+            }
+
+           else {
+                return false;
+            }
+         
+        $(window).resize(function(){
+            $(".show").hide();
+        })
+         $("html, body" + nextnextstrip).queue(function(){animate({ scrollTop: $(document).height() }, 500000);});
+        });
+      
+
+
+      
+
+     
+
+
+    </script>
+</body>
+  
+</html>
