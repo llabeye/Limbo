@@ -9,10 +9,267 @@ body {
 /*hide scroll bar*/
 body::-webkit-scrollbar { width: 0 !important; height: 0 !important; }
 @font-face{
-    font-family: Redaction;
+    font-family: Redaction-;
     src:url(Redaction10Bold-w1gB6.otf);
     
 }
+/*
+ *  WebFont Package Licensed to Alex
+ */
+
+/* Redaction Regular */
+@font-face {
+    font-family: 'Redaction0';
+    src:    url('eot/Redaction-Regular.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Redaction Italic */
+@font-face {
+    font-family: 'Redaction';
+    src:    url('eot/Redaction-Italic.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction-Italic.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Redaction Bold */
+@font-face {
+    font-family: 'Redaction';
+    src:    url('eot/Redaction-Bold.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Redaction 10 Regular */
+@font-face {
+    font-family: 'Redaction1';
+    src:    url('eot/Redaction10-Regular.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction10-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction10-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction10-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Redaction 10 Regular Italic */
+@font-face {
+    font-family: 'Redaction 10';
+    src:    url('eot/Redaction10-Italic.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction10-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction10-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction10-Italic.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Redaction 10 Bold */
+@font-face {
+    font-family: 'Redaction 10';
+    src:    url('eot/Redaction10-Bold.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction10-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction10-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction10-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Redaction 100 Regular */
+@font-face {
+    font-family: 'Redaction6';
+    src:    url('eot/Redaction100-Regular.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction100-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction100-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction100-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Redaction 100 Regular Italic */
+@font-face {
+    font-family: 'Redaction 100';
+    src:    url('eot/Redaction100-Italic.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction100-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction100-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction100-Italic.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Redaction 100 Bold */
+@font-face {
+    font-family: 'Redaction 100';
+    src:    url('eot/Redaction100-Bold.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction100-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction100-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction100-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Redaction 20 Regular */
+@font-face {
+    font-family: 'Redaction2';
+    src:    url('eot/Redaction20-Regular.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction20-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction20-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction20-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Redaction 20 Regular Italic */
+@font-face {
+    font-family: 'Redaction 20';
+    src:    url('eot/Redaction20-Italic.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction20-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction20-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction20-Italic.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Redaction 20 Bold */
+@font-face {
+    font-family: 'Redaction 20';
+    src:    url('eot/Redaction20-Bold.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction20-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction20-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction20-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Redaction 35 Regular */
+@font-face {
+    font-family: 'Redaction3';
+    src:    url('eot/Redaction35-Regular.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction35-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction35-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction35-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Redaction 35 Regular Italic */
+@font-face {
+    font-family: 'Redaction 35';
+    src:    url('eot/Redaction35-Italic.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction35-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction35-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction35-Italic.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Redaction 35 Bold */
+@font-face {
+    font-family: 'Redaction 35';
+    src:    url('eot/Redaction35-Bold.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction35-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction35-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction35-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Redaction 50 Regular */
+@font-face {
+    font-family: 'Redaction4';
+    src:    url('eot/Redaction50-Regular.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction50-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction50-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction50-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Redaction 50 Regular Italic */
+@font-face {
+    font-family: 'Redaction 50';
+    src:    url('eot/Redaction50-Italic.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction50-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction50-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction50-Italic.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Redaction 50 Bold */
+@font-face {
+    font-family: 'Redaction 50';
+    src:    url('eot/Redaction50-Bold.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction50-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction50-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction50-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Redaction 70 Regular */
+@font-face {
+    font-family: 'Redaction5';
+    src:    url('eot/Redaction70-Regular.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction70-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction70-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction70-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Redaction 70 Regular Italic */
+@font-face {
+    font-family: 'Redaction 70';
+    src:    url('eot/Redaction70-Italic.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction70-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction70-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction70-Italic.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Redaction 70 Bold */
+@font-face {
+    font-family: 'Redaction 70';
+    src:    url('eot/Redaction70-Bold.eot'); /* IE9 Compat Modes */
+    src:    url('eot/Redaction70-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('woff2/Redaction70-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('woff/Redaction70-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 img{
     width: 30vw;
     cursor: none;
@@ -29,20 +286,17 @@ img{
     width: 100%;
     height: 100%;
     color: white;
-    font-family: "Redaction";
-    font-size: 20vw;
+    font-family: "Redaction0";
+    font-size: 15vw;
     position: fixed;
     z-index: 3;
     bottom: 0;
     right: 0;
     left: 0;
-    top: 0;
+    top: 0%;
 
 }
-span:hover {
-    color: grey;
 
-}
 .strip{
     overflow: auto;
     position: absolute;

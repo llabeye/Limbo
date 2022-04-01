@@ -3,14 +3,10 @@
   
 <head>
     <title>
-      Limbo
+      scroll test
     </title>
     <link href="css/style.css" rel="stylesheet"  />
-    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <link href="css/reset.css" rel="stylesheet" />
 </head>
 <script src=
 "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
@@ -25,7 +21,7 @@
       <div id="wrapper">
       <div class="gradient"></div>
       <<div style="display:none" id="stuff"><div class="awaytextthings">Take a step back. <br> Breathe in.<br>You're very much alive.</div></div>
-      <div class="show"><span>Limbo</span></div>
+      <div class="show"> <br><span>Limbo </span></div>
     <div id="div0">
        <img src="strips/i1.jpg">
     </div>
@@ -53,8 +49,7 @@
 
 
         
-        $(window).on('click', function() {
-            $("body").css("cursor","none");
+        $(window).on("click", function() {
             $(".show").fadeOut(5000);
             var nextnextstrip = "<div id='div" + idnumber + "''><img src = 'strips/i" + (counter) +".jpg'></div>";
             if ($(window).scrollTop() >= $(element).offset().top + $(element).outerHeight() - window.innerHeight) {
@@ -81,12 +76,42 @@
                 return false;
             }
          
-        $(window).resize(function(){
-            $(".show").hide();
-        })
          $("html, body" + nextnextstrip).queue(function(){animate({ scrollTop: $(document).height() }, 500000);});
         });
-      
+       let btextWords = document.querySelectorAll("span")
+        textDecay(btextWords)
+      function textDecay(words) {
+  for (let i = 0; i < words.length; i++) {
+    // set initial hover state
+    let hover = false
+    // get font weight
+    let weight = words[i].style.fontFamily.slice(-1)
+    // for desktop: when mouse over the word
+    words[i].addEventListener('mouseenter', () => {
+      if ( weight < 6 ) {
+        weight++
+        words[i].style.fontFamily = "Redaction" + weight
+      }
+      hover = true
+      // decay (weight+1) every 1/2 second
+      var textDecay = setInterval(function(){
+        if ( hover == true && weight < 6 ) {
+          weight++
+          words[i].style.fontFamily = "Redaction" + weight
+        } else {
+          clearInterval(textDecay)
+        }
+      },1000);
+    })
+    if (hover == true && weight >= 6) {
+    $(".show").fadeOut(5000);
+}
+    // for desktop
+    words[i].addEventListener('mouseleave', () => {
+      hover = false
+    })
+  }
+}
 
 
       
